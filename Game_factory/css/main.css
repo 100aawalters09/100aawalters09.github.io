@@ -1,0 +1,141 @@
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Montserrat', monospace;
+	word-wrap: break-word;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-decoration: none;
+}
+
+.btn-lg {
+	background-color: #000;
+	color: #FFF;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 10px;
+	width: 100px;
+	font-size: 16px;
+	float: center;
+}
+
+.btn-lg:hover {
+	color: #000;
+	font-size: 18px;
+	background-color: #FFF;
+}
+
+.lighter {
+	color: #080;
+}
+
+#score {
+	background-color: rgb(230, 230, 230);
+	color: #111;
+	min-width: 100px;
+	max-width: 150px;
+	height: 150px;
+	margin: 10px;
+	padding: 10px;
+	text-align: center;
+	position: inline;
+}
+
+.hiddenDiv {
+	display: none;
+}
+
+#inform, #userInput, #questions, #status {
+	background-color: rgba(240, 240, 240, .8);
+	text-align: left;
+	color: #000;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+	height: auto;
+	width: 100%;
+	min-height: 400px;
+}
+
+h1 {
+	font-size: 3.2vw;
+	text-align: left;
+}
+
+#inform li {
+	font-size: 2vw;
+	line-height: 200%;
+}
+
+#inform ul {
+	list-style: none;
+	font-size: 20px;
+	margin: 20px;
+	font-family: 'Open Sans', 'Montserrat', monospace;
+	line-height: 40px;
+	text-align: right;
+}
+
+#nameError, .questionReplyWrong, .questionReplyRight {
+	display: none; 
+	color: red;
+	margin: 10px;
+}
+
+.questionReplyWrong, .questionReplyRight, .correcting {
+	pointer-events: none;
+	cursor: default;
+	text-decoration: none;
+}
+
+#quoteBtn {
+	margin-top: 300px;
+}
+
+#quote {
+	height: 100%;
+	width: 100%;
+	background: transparent;
+}
+
+form {
+	font-size: 16px;
+	padding: 50px;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.dropdown button {
+	margin-top: 50px;
+}
+
+.dropdown-menu {
+	background-color: #FFF;
+	display: none;
+	font: bold 	16px 'Open Sans', 'Montserrat', monospace;
+	color: #000;
+	text-align: center;
+	padding: 5px;	
+}
+
+#animalChooseBtn {
+	margin: 20px;
+	background-color: #FFF;
+	color: #000;
+	font: bold 	16px 'Open Sans', 'Montserrat', monospace;
+	float: left;
+	margin-bottom: 35px;
+	width: 150px;
+	
+}
+
+#status {
+	text-align: center;
+}

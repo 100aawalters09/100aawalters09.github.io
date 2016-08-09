@@ -1,0 +1,64 @@
+#bodyPart {
+  overflow: hidden;
+  background-color: #4444AA;
+  text-align: center;
+}
+#title {
+  font: 30px monospace;
+  color: #FFF;
+  margin: 10px;
+  text-decoration: overline underline;
+}
+#quoteBox {
+  background-color: white;
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: solid 3px black;
+  border-radius: 10%;
+  padding: 10px;
+  margin: 10px auto;
+  position: relative;
+  font-family: monospace;
+  height: 390px; 
+  max-height: 390px;
+  max-width: 500px;
+}
+#quoteText {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin:  40px auto;
+  padding: 10px;
+  max-width: 200px;
+  font: 20px monospace;
+} 
+#authorText {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  margin:  10px auto;
+  padding: 20px;
+  bottom: 0px;
+  position: absolute;
+  font: 15px monospace; 
+}
+#tweetShare {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  margin:  10px auto;
+  padding: 20px;
+  bottom: 0px;
+}
+#quoteBtn {
+  color: black;
+  font: 18px monospace;
+  border: solid 1px black;
+  position: relative;
+  margin: 3px;
+}
+#author {
+  color: #FFF;
+  font: 13px monospace;
+  width: 100%;
+  bottom: 0px;
+  position: absolute;
+}

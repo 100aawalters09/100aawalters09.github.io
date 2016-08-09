@@ -1,0 +1,36 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="container-fluid">
+  <div class="row">
+    <div class="col-md-5">
+      <input type="text" class="roundsNow"></input>
+      <button class="start btn btn-lg">Start</button>
+      <div class="row">
+        <div class="col-md-6">
+          <button class="strictMode btn btn-lg">Strict Mode</button>
+        </div>
+        <div class="col-md-6">
+          <button class="restart btn btn-lg">Restart</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-7 simon">
+      <h3 class="winnerAlert">Winner! You got 20 in a row.</h3>
+      <h5 class="error errorNotStrict">Give this round another shot!</h5>
+      <h5 class="error errorStrict">Start over, here is a new sequence.</h5>
+      <ul>
+        <li class="tile green" data-tile="1"></li>
+        <li class="tile red" data-tile="2"></li>
+        <li class="tile yellow" data-tile="3"></li>
+        <li class="tile blue" data-tile="4"></li>
+      </ul>
+    </div>
+    
+  </div>
+</body>
+
+</html>

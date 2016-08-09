@@ -1,0 +1,99 @@
+body {
+	background-color: #FFF;
+	height: 100%;
+	width: 100%;
+	font-family: 'Playfair Display', Oswald, serif;
+	background-color: rgba(85, 85, 153, 0.3);
+	overflow-x: hidden;
+}
+
+header {
+	height: auto;
+	margin-bottom: 50px;
+	background-color: #559;
+	padding: 10px;
+}
+
+.container-fluid {
+	margin: 0px auto;
+	padding: 30px;
+	width: 100%;
+}
+
+h1 {
+	font: 60px 'Playfair Display', Oswald, serif;
+	text-align: right;
+	color: #ff5;
+}
+
+h2 {
+	text-align: right;
+	font: 30px 'Playfair Display', Oswald, serif;
+	color: #ff7;
+}
+
+ul {
+	list-style: none;  
+}
+
+#Poe-works, #quotes, #interesting-facts, #life-poe {
+	font: 20px 'Playfair Display', Oswald, serif;
+	line-height: 150%;
+	letter-spacing: 1.5px;
+	text-align: left;
+}
+
+#life-poe {
+	clear: both;
+}
+
+#poe-main {
+	width: 70%;
+	max-width: 500px;
+	margin: 10px auto;
+	height: auto;
+	border: 8px solid #559;
+}
+
+h3, h4, h5, h6 {
+	font: 30px 'Playfair Display', Oswald, serif;
+	text-align: center;
+	color: #222;
+}
+
+p, li, a {
+	color: #444;
+	text-size: 18px;
+	line-height: 150%;
+}
+ 
+#annabel-lee {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	width: 50%;
+	margin: 0px auto;
+	height: auto;
+	padding: 50px;
+}
+#more-info {
+	text-align: center;
+	font: 20px Oswald;
+}
+
+a {
+	color: #fff;
+	margin-left: 300px;
+	top: 100px;
+	margin: 0px auto;
+	padding: 10px;
+	background-color: #559;
+	text-decoration: none;
+ }
+
+#author {
+	text-align: center;
+	font: 15px 'Playfair Display', Oswald, serif;;
+	width: 100%;
+	clear: both;
+	margin: 30px 50px 10px 50px;
+}

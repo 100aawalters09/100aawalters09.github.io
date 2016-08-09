@@ -1,0 +1,115 @@
+html, body {
+  background-color: rgba(9, 100, 150, 0.7);
+  height: 100%;
+  width: 100%;
+  padding-right: 15%;  
+  padding-left: 15%;
+}
+
+h2 {
+  font-family: "Monofett", "Open Sans", monospace;
+  font-size: 80px;
+  text-align: center;
+  color: white;
+}
+#tablediv {
+  height: 300px;
+}
+table {
+  border: 8px solid rgb(39, 24, 73);
+  height: 300px;
+  width: 300px;
+  margin: 0px auto;
+  display: none;
+}
+
+table tr, table td {
+  border: 8px solid rgb(9, 47, 135);
+}
+
+table td:hover {
+  background-color: rgba(9, 47, 135, 0.5);
+}
+
+td {
+  width: 33%;
+  max-width: 33%;
+  height: 33%;
+  max-height: 33%;
+  text-align: center;
+}
+
+footer {
+  margin: 20px auto;
+  text-align: center;
+  width: 100%;
+}
+
+.btn-group {
+  width: 100%;
+  text-align: left;
+}
+
+.btn {
+  background-color: rgb(9, 47, 135);
+  color: white;
+  font-size: 18px;
+  font-family: "Open Sans", monospace;
+  
+}
+
+h3 {
+  font-size: 25px;
+  font-family: "Open Sans", monospace;
+  color: white;
+}
+
+td {
+  font-size: 40px;
+  font-family: "Open Sans", monospace;
+  color: white;
+}
+
+li, a:link, a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+  h2 {
+    font-size: 70px;
+  }
+  html, body {
+    padding: 0px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  td {
+    font-size: 25px;
+  }
+  h2 {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  html, body {
+    width: 320px;
+    margin: 0px;
+  }
+  h2 {
+    font-size: 45px;
+  }
+  h3, .btn {
+    font-size: 16px;
+  }
+  #tablediv {
+    height: 200px;
+  }
+  table {
+    height: 200px;
+    width: 200px;
+  }
+}

@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<title>Factory Farm Game</title>
+	<link rel="icon" href="img/farmFavicon.ico" type="image/png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js" type="text/javascript"></script> 
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
+	<script type="text/javascript" src="js/main.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body >
+	<div id="score" class="hiddenDiv container-fluid pull-right">
+		<h3>Score: </h3>
+		<h4 id = "currentScore">0</h4>
+	</div>
+	<div id="inform" class="hiddenDiv container-fluid">
+		<h1><strong>Did you know?</strong></h1>
+		<ul>
+			<li class="lighter">Factory farming is responsible for 37% of methane emissions.</li>
+			<li>Deforestation for animal feed crops emits <strong>2.4 billion tons</strong> of CO&#8322 per year.</li>
+			<li class="lighter">Animals experience confinement, unsanitary conditions, and mutilations.</li>
+			<li><strong>80%</strong> of antibiotics are used on factory farms.</li>
+			<li class="lighter">The industry puts an incredible strain on our natural resources, pollutes the air, water, and land.</li>
+		</ul>
+		<a href="#" class="btn btn-lg" id="informBtn">Next</a>
+	</div>
+	<div id="quote" class="hiddenDiv container-fluid">
+		<a href="#" class="btn btn-lg" id="quoteBtn">Continue</a>
+	</div>
+	<div id="userInput" class="hiddenDiv container-fluid">
+		<h1>Do you know where your food comes from?</h1>
+		<form role="form" action="#">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<p id="nameError">Input not acceptable. Try again.</p>
+				<input type="text" class="form-control" id="name" /></br>
+				<label for="animalChooseBtn">What factory farm animal interests you most?</label></br>
+				<div class="dropdown">
+					<button id="animalChooseBtn" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pick an Animal<span class="caret"></span></button>
+					  <ul class="dropdown-menu dropdown-menu-left">
+						<li><a  href="#">Chickens</a></li>
+						<li><a  href="#">Cows</a></li>
+						<li><a  href="#">Pigs</a></li>
+					  </ul>
+				</div>
+			</div>
+			<a href="#" class="btn btn-lg pull-right" id="userBtn">Next</a>
+		</form>
+	</div>
+	<div id="questions" class="hiddenDiv container-fluid">
+		<div id="q1" class="hiddenDiv">
+			<h3 ><strong>Question: </strong> What is removed from chickens, turkeys, and ducks in factory farms?</h3>
+			<div class="dropdown">
+				<button id="submitQ1" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+			    <ul class="dropdown-menu dropdown-menu">
+					<li><a class="correct" href="#">Beaks</a></li>
+					<li><a href="#">Wing Feathers</a></li>
+					<li><a href="#">Feet</a></li>
+				  </ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ1">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn1">Next</a>
+			</div>
+		</div>
+		<div id="q2" class="hiddenDiv">
+			<h3><strong>Question: </strong>The produce we see today is not the same as 40 years ago. What is different?</h3>
+			<div class="dropdown">
+				<button id="submitQ2" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				  <ul class="dropdown-menu dropdown-menu">
+					<li><a class="correct" href="#">Less protein and more fat</a></li>
+					<li><a href="#">More protein</a></li>
+					<li><a href="#">Less fat</a></li>
+				  </ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ2">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn2">Next</a>
+			</div>		
+		</div>
+		<div id="q3" class="hiddenDiv">
+			<h3 ><strong>Question: </strong>Chickens, as well as other livestock on factory farms, are treated with what to increase profits?</h3>
+			<div class="dropdown">
+				<button id="submitQ3" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				  <ul class="dropdown-menu dropdown-menu">
+					<li><a href="#">Vitamins</a></li>
+					<li><a class="correct" href="#">Antibiotics and hormones</a></li>
+					<li><a href="#">Insulin</a></li>
+				  </ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ3">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn3">Next</a>
+			</div>
+		</div>
+		<div id="q4" class="hiddenDiv">
+			<h3 ><strong>Question: </strong>Dairy cows would normally live to how old when not on a factory farm?</h3>
+			<div class="dropdown ">
+				<button id="submitQ4" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				  <ul class="dropdown-menu dropdown-menu">
+					<li><a class="correct" href="#">20 yrs</a></li>
+					<li><a href="#">50 years</a></li>
+					<li><a href="#">10 years</a></li>
+				  </ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ4">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn4">Next</a>
+			</div>
+		</div>
+		<div id="q5" class="hiddenDiv">
+			<h3 ><strong>Question: </strong>Young male cows have their testicles removed surgically with a scalpel, thier spermatic cords crushed with a clamp, or the blood flow to their scrotum constricted until the testicles die and fall off. What is the reasoning behind castration of young male calves?</h3>
+			<div class="dropdown">
+				<button id="submitQ5" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				  <ul class="dropdown-menu dropdown-menu">
+					<li><a class="correct" href="#">Thought to improve meat quality.</a></li>
+					<li><a href="#">Sell on the black market.</a></li>
+					<li><a href="#">Used for medical research.</a></li>
+				  </ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ5">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn5">Next</a>
+			</div>
+		</div>
+		<div id="q6" class="hiddenDiv">
+			<h3 ><strong>Question: </strong>Sows spend the majority of thier lives in crates so small they cannot even turn around. These sows are impregnated over and over again until thier bodies give out. Where are they sent then?</h3>
+			<div class="dropdown">
+				<button id="submitQ6" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu">
+					<li><a href="#">To a safe haven</a></li>
+					<li><a class="correct" href="#">Slaughterhouse</a></li>
+					<li><a href="#">Used in research</a></li>
+				</ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ6">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn6">Next</a>
+			</div>
+		</div>
+		<div id="q7" class="hiddenDiv">
+			<h3 ><strong>Question: </strong>What is the equivalent to how much water is needed to raise 1 pound of beef? </h3>
+			<div class="dropdown">
+				<button id="submitQ7" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu">
+					<li><a href="#">2 full bathtubs of water</a></li>
+					<li><a class="correct" href="#">Water for a seven-minute shower/day for 6 months<a></li>
+					<li><a href="#">The amt of water in Lake Erie</a></li>
+				</ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ7">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn7">Next</a>
+			</div>
+		</div>
+		<div id="q8" class="hiddenDiv">
+			<h3 ><strong>Question: </strong>One of the biggest environmental impacts of a meat-eating diet is the depletion of _________, particularly the consumption of vast amounts of ____ for livestock production. </h3>
+			<div class="dropdown">
+				<button id="submitQ8" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu">
+					<li><a href="#">Natural Resources; Antibiotics</a></li>
+					<li><a href="#">Money; Credit</a></li>
+					<li><a class="correct" href="#">Natural Resources; Water<a></li>
+				</ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ8">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn8">Next</a>
+			</div>
+		</div>
+		<div id="q9" class="hiddenDiv">
+			<h3 ><strong>Question: </strong>How many square feet of tropical rainforest are destroyed to make every fast-food hamburger?</h3>
+			<div class="dropdown">
+				<button id="submitQ9" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu">
+					<li><a href="#">5 square feet</a></li>
+					<li><a href="#">35 square feet</a></li>
+					<li><a class="correct" href="#">55 square feet<a></li>
+				</ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ9">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn9">Next</a>
+			</div>
+		</div>
+		<div id="q10" class="hiddenDiv">
+			<h3 ><strong>Question: </strong>Dairy cows are fed antibiotics to prevent disease and increase feed efficiency. Antibiotic residues persist in milk and other dairy products despite protocols aimed to minimize this. What negative effect does this have on the consumers?</h3>
+			<div class="dropdown">
+				<button id="submitQ10" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Answer<span class="caret"></span></button>
+				<ul class="dropdown-menu dropdown-menu">
+					<li><a href="#">Paralysis</a></li>
+					<li><a href="#">Mad Cow Disease</a></li>
+					<li><a class="correct" href="#">Antibiotic Resistance<a></li>
+				</ul>
+			</div>
+			<h2 class="questionReplyWrong">Incorrect</h2>
+			<h4 class="correcting"></h4>
+			<h2 class="questionReplyRight">Correct</h2></br>
+			<div id="nextQ10">
+				<a href="#" class="btn btn-lg hiddenDiv" id="nextQBtn10">Next</a>
+			</div>
+		</div>
+	</div>
+	<div id="status" class="hiddenDiv container-fluid">
+			<h2 id="finish"></h2>
+			<h3 id="endScore"></h3>
+	</div>
+</body>
+</html>

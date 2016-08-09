@@ -1,0 +1,86 @@
+html, body {
+	background-color: rgb(1, 14, 20);
+	overflow-x: hidden;
+	overflow-y: auto;
+	height: 100%;
+	width: 100%;
+	word-wrap: break-word;
+}
+
+.output {
+	height: 300px;
+	width: 300px;
+	padding: 100px 0px 100px 0px;
+	margin: 30px auto;
+	border-radius: 100%;
+	background-color: rgb(181, 225, 244);
+	color: rgb(1, 14, 20);
+}
+
+h2 {
+	font: "Orbitron", "Exo", sans-serif;
+	text-align: center;
+	font-size: 50px;
+	font-weight: 600;
+}
+
+label {
+	color: rgb(181, 225, 244);
+	font-size: 22px;
+	font-weight: 600;
+	font: "Orbitron", "Exo", sans-serif;
+	margin-top: 20px;
+}
+
+button.time {
+	cursor: default;
+}
+
+.btn, .time:hover {
+	background-color: rgb(181, 225, 244);
+	color: rgb(1, 14, 20);
+	font-size: 20px;
+	font-weight: 600;
+	margin: 5px 10px 20px 10px;
+	width: 100px;
+	height: 40px;
+}
+
+.row {
+	margin: 10px auto;
+	text-align: center;
+}
+
+.row a {
+	color: rgb(181, 225, 244);
+	font-size: 16px;
+	font-weight: 600;
+}
+
+@media screen and (max-width: 400px) {
+	.output {
+		height: 250px;
+		width: 250px;
+		padding: 90px 0px 90px 0px;
+		margin: 30px auto;
+		border-radius: 100%;
+		background-color: rgb(181, 225, 244);
+	}
+	h2 {
+		font-size: 40px;
+		font-weight: 600;
+		word-wrap: break-word;
+	}
+	#session .btn {
+		width: 50px;
+		font-size: 20px;
+		font-weight: 600;
+		margin: 2px;
+	}
+}
+
+@media screen and (max-width: 250px) {
+	html, body {
+		width: 250px;
+	}
+}

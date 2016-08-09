@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>twitch.tv Streamers</title>
+		<link rel="icon" href="img/favicon.ico" type="image/png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/jquery-ui.min.js" type="text/javascript"></script> 
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.9/themes/base/jquery-ui.css" type="text/css" media="all" />
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="js/main.js"></script>
+	</head>
+	<body>
+		<header class="container-fluid">
+			<div class="row">
+				<div class="col-xs-6">
+					<i class="fa fa-twitch fa-4x" aria-hidden="true"></i>
+					<h2>twitch.tv</h2>
+				</div>
+				<div class="col-xs-6">
+					<ul class="nav nav-pills pull-right">
+						<li><a>Online</a></li>
+						<li><a>Offline</a></li>
+						<li id="all" class="active"><a>All</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="container-fluid well" id="sortable" title="Drag to reorder">
+		</div>
+		<form role="form">
+			<input type="text" class="form-control" id="newStreamer" placeholder="Enter new streamer..." />
+		</form>
+		<a class="btn btn-med">Add Streamer</a>
+		<p id="alert"><i class="fa fa-exclamation-triangle fa-md" aria-hidden="true"></i>User does not exist.</p>
+		</br></br><h6> Coded by A. Walters, 2016</h6>
+	</body>
+</html>

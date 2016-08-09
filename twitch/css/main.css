@@ -1,0 +1,164 @@
+body {
+    background-color: #2C2C30;
+    height: 100%;
+    width: 100%;
+    word-wrap: break-word;
+    overflow: auto;
+}
+
+header {
+    color: #fff;
+    margin: 20px;
+}
+
+.nav {
+    text-align: center;
+    margin-right: 5%;
+    cursor: pointer;
+}
+
+.nav li {
+    float: right;
+}
+
+.nav a {
+    color: #000;
+    font: 16px 'Lato', Sans serif;
+    background-color: #fff;
+    margin: 5px;
+}
+
+.fa-twitch {
+    float: left;
+    margin: 20px 5px 10px 20px;
+}
+
+h2 {
+    font: 30px 'Lato', Sans serif;
+    float: left;
+    text-align: right;
+    margin: 20px 10px 10px 5px;
+}
+
+.sectionDiv div>h3 {
+    color: #000;
+}
+
+.sectionDiv a h3:hover {
+    color: #5084F4;
+}
+
+.well {
+    background-color: #fff;
+    height: 450px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    color: #fff;
+}
+
+h4 {
+    font: 16px 'Lato', Sans serif;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.well .row {
+    margin: 10px auto;
+    padding: 5px;
+    background-color: #1C1C2D;
+    min-height: 100px;
+    font: 16px 'Lato', Sans serif;
+    letter-spacing: 1px;
+    text-align: right;
+}
+
+.well h3 {
+    margin: 10px 2vw 10px 2vw;
+    padding: 5px;
+    width: 100%;
+    text-align: left;
+    letter-spacing: 1px;
+    color: #fff;
+    font: bold 20px 'Lato', Sans serif;
+    float: left;
+}
+
+form {
+    background-color: #fff;
+    margin: 30px auto;
+    width: 200px;
+    height: 22px;
+}
+
+input {
+    display: block;
+    font-family: 'Lato', Sans serif;
+    height: 28px;
+    background-color: #fff;
+}
+
+.btn {
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    color: #000;
+    font: 16px 'Lato', Sans serif;
+    background-color: #fff;
+    width: 150px;
+    margin: 30px auto;
+}
+
+.btn:hover {
+    background-color: #5084F4;
+    color: #fff;
+}
+
+#alert {
+    display: none;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin: 20px auto;
+    font: 20px bold 'Lato', Sans serif;
+    background: red;
+    width: 200px;
+    padding: 10px;
+}
+
+.fa-exclamation-triangle {
+    padding: 5px;
+}
+
+h6 {
+    color: #fff;
+    text-align: right;
+    padding: 10px;
+}
+
+@media screen and (max-width: 500px) {    
+    .well .row {
+        font: 16px 'Lato', Sans serif;
+    }
+}
+
+@media screen and (max-width: 320px) {
+   
+    .well {
+        height: 600px;
+        width: 300px;
+        margin: 15px;
+        padding: 5px;
+    }
+    .well .row {
+        font: 10px 'Lato', Sans serif;
+    }
+    .header .row {
+        width: 300px;
+    }
+    .nav {
+        margin-top: 200px;
+    }
+}

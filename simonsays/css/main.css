@@ -1,0 +1,144 @@
+html, body {
+  background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZb7ofUBgLNbPLFgqR-f0IPgI8tc5mCK3mCTceGTi1ghRnUY66qA");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  color: rgb(11, 11, 30);
+}
+
+.row {
+  padding: 20px;
+}
+
+.simon {
+  margin: 10px auto;
+  width: 450px;
+  height: 450px;
+  cursor: pointer;
+  display: block;
+}
+
+.tile {
+  border: 10px solid black;
+  height: 170px;
+  width: 170px;
+  display: inline-block;
+}
+
+.activeTile {
+  opacity: 0.6;
+}
+
+.red {
+  background-color: rgb(255, 0, 0);
+  border-radius: 0 170px 0 0;
+}
+
+.yellow {
+  background-color: rgb(255, 255, 0);
+  border-radius: 0 0 0 170px;
+}
+
+.blue {
+  background-color: rgb(0, 0, 255);
+  border-radius: 0 0 170px 0;
+}
+
+.green {
+  background-color: rgb(0, 128, 0);
+  border-radius: 170px 0 0 0;
+}
+
+.winnerAlert {
+  color: black;
+  font-weight: 600; 
+  text-align: center;
+  font-size: 32px;
+  padding: 5px;
+  display: none;
+  background-color: #DEC08D;
+  padding: 5px;
+  border: 3px solid #7E5923;
+}
+
+.error {
+  color: red;
+  font-weight: 600;
+  text-align: center;
+  font-size: 16px;
+  padding: 5px;
+  border: 3px solid #7E5923;
+  background-color: #DEC08D;
+  display: none;
+}
+
+.roundsNow {
+  color: #7E5923;
+  border: 6px solid #7E5923;
+  background-color: #DEC08D;
+  height: 50px;
+  width: 70px;
+  margin: 0px auto;
+  display: block;
+  text-align: center;
+  font-size: 30px;
+}
+
+.start {
+  width: 100px;
+  font-size: 18px; 
+}
+
+.col-md-6 .btn { 
+  width: 130px;
+  font-size: 16px;  
+}
+
+.btn {
+  text-align: center;
+  border: 3px solid #7E5923;
+  background-color: #DEC08D;
+  color: #7E5923;
+  margin: 5px auto;
+  display: block;
+}
+
+.btn:hover {
+  background-color: #7E5923;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
+  font-weight: 400;
+  color: #7E5923;
+}
+
+@media screen and (max-width: 600px) {
+  .simon {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+  }
+
+  .tile {
+    height: 100px;
+    width: 100px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .simon {
+    width: 250px;
+    height: 250px;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .tile {
+    height: 95px;
+    width: 95px;
+  }
+}

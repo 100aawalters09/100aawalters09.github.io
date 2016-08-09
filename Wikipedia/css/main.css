@@ -1,0 +1,157 @@
+html, body {
+    margin: 0px;
+    border-left: 5vw solid #036FB7;
+    border-right: 5vw solid #036FB7;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(80, 132, 244, 0.5);
+    overflow: hidden;
+    word-wrap: break-word;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#instructClick {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vw;
+}
+
+#searchIcon {
+    max-height: 50px;
+    color: rgb(3, 111, 183);
+    display: none;
+    position: relative;
+    cursor: pointer;
+    z-index: 5;
+}
+
+#instructClick h3 {
+    margin: 0px auto;
+    margin-bottom: 2vw;
+    max-width: 250px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: solid 5px rgb(3, 111, 183);
+    display: none;
+    position: relative;
+    color: #FFF;
+    letter-spacing: 2px;
+}
+
+.container {
+    width: 250px;
+    margin-top: 10vw;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    display: none;
+}
+
+.container input#search {
+    width: 220px;
+    height: 50px;
+    background: transparent;
+    border: 4px solid #036FB7;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 50px;
+    float: left;
+    color: #fff;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+#randomArticle {
+    color: #fff;
+    text-align: center;
+    display: none;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.container input#search::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.container input#search::-moz-placeholder { 
+    color: #fff;
+}
+
+.container input#search::-moz-placeholder { 
+    color: #fff;
+}
+
+.container input#search::-ms-input-placeholder {
+    color: #fff;
+}
+
+.container input#search:hover, .container input#search:focus, .container input#search:active {
+    outline: none;
+    background: rgba(9, 47, 135, 1.5);
+}
+
+.iconResearch {
+    display: none;
+    background-color: #036FB7;
+    border: 3px solid #fff;
+}
+
+.iconResearch .fa {
+    margin: 10px;
+}
+
+#nextBtn {
+    display: none;
+    background-color: #036FB7;
+    border: 3px solid #fff;
+    padding: 10px;
+}
+
+.row1 {
+    margin-top: 40px;
+}
+
+.row2 {
+    margin-top: 20px;
+}
+
+.resultDisplay {
+    margin: 0px auto;
+    padding: 10px;
+    width: 95%;
+    min-height: 250px;
+    height: auto;
+    background-color: #036FB7;
+    border: 3px solid #fff;
+    color: #fff;
+    display: none;
+}
+
+.wikiTitle {
+    font-size: 22px;
+    cursor: pointer;
+    text-align: right;
+    color: #fff;
+}
+
+.wikiSnippet {
+    font-size: 14px;
+    text-align: left;
+}
+
+@media screen and (max-width: 959px) {
+   .container-fluid {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+   .container-fluid {
+        width: 320px;
+    }
+}
