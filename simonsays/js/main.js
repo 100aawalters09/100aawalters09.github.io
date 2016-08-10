@@ -27,9 +27,8 @@ var main = function() {
   }
   
   function playSound(clickedTile) {
-    var audioElement = document.createElement("audio");
-    audioElement.setAttribute('src', 'https://s3.amazonaws.com/freecodecamp/simonSound' + clickedTile + '.mp3');
-    audioElement.play();
+    var audioElement = document.getElementById("sound" + clickedTile);
+	audioElement.play();
   }
 
   function updateLevel() {
