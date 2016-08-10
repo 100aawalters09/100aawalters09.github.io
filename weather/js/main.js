@@ -26,7 +26,7 @@ var main = function() {
 
 		function functionLatLng(lat, lgn) {
 			$.ajax({
-				url: 'http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lgn + '&APPID=b75ff2773c27633b2fd3d886231bde75',
+				url: 'https://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lgn + '&APPID=b75ff2773c27633b2fd3d886231bde75',
 				type: "GET",
 				dataType: "jsonp",
 				success: function(data) {
